@@ -1,0 +1,242 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #fb774b;
+}
+
+.navbar {
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link :hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: darkgreen;
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 0px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3 ease;
+}
+
+.navbar i:hover,
+.navbar i.active {
+  color: darkgreen;
+}
+
+#home {
+  background-image: url("photos/bg.png");
+  width: 100%;
+  height: 65vh;
+  background-size: cover;
+  background-position: top 0px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3 ease;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: darkgreen;
+  color: white;
+  cursor: grab;
+}
+
+.product {
+  outline: none;
+  border: none;
+  padding-top: 100px;
+}
+
+.card {
+  outline: #1d1d1d;
+  border: #1d1d1d;
+  padding-top: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card img {
+  transition: filter 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: grab;
+}
+
+.card:hover img {
+  filter: brightness(50%);
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  color: white;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 600px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  max-width: 100px; 
+}
+
+.links img {
+  max-height: 40px;
+  margin-right: 10px; 
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}

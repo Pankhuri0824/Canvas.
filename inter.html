@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Paintings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light py-4" style="background-color: black; z-index: 1000;">
+        <div class="container-fluid">
+          <img src="photos/Logo-white.png">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-ddicon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link " style="color: white" href="index.html"><b>Home</b></a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white" href="#" onclick="scrollToSection('homedown')"><b>Region</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " style="color: white" href="#" onclick="scrollToSection('footer')"><b>Contact</b></a>
+              </li>
+              <li>
+                <i class="fa-solid fa-search" style="color: #ffffff;"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="inter" style="margin-top: 100px; padding-bottom: 50px;">
+        <div class="container text-center">
+            <div class="row">
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;" onclick="openModal('GIRL WITH A PEARL EARRING','Johannes Vermeer , 1665', 'Johannes Vermeer’s 1665 study of a young woman is startlingly real and startlingly modern, almost as if it were a photograph. This gets into the debate over whether or not Vermeer employed a pre-photographic device called a camera obscura to create the image. Leaving that aside, the sitter is unknown, though it’s been speculated that she might have been Vermeer’s maid.He portrays her looking over her shoulder, locking her eyes with the viewer as if attempting to establish an intimate connection across the centuries. Technically speaking, Girl isn’t a portrait, but rather an example of the Dutch genre called a tronie—a headshot meant more as still life of facial features than as an attempt to capture a likeness', 'photos/pearl.jpg')" >
+                        <img src="photos/pearl.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><h4>GIRL WITH A PEARL EARRING</h4></h5>
+                            <p class="card-text">Johannes Vermeer<br>
+                              1665</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('GREAT WAVE OFF KANGAWA', 'Hokusai,1831','Katsushika Hokusai’s Under the Wave off Kanagawa, also called The Great Wave has became one of the most famous works of art in the world—and debatably the most iconic work of Japanese art.It is part of a series of prints titled Thirty-six views of Mount Fuji, which Hokusai made between 1830 and 1833.<br><br>The Great Wave can be taken as a symbolic image of an important change happening to the Japanese society, a change which brings the presence of the foreign influences coming from the uncertainty of the sea and opposed to the firmness and stillness of Mount Fuji, the established symbol for the soul of Japan.', 'photos/wave.jpg')" >
+                        <img src="photos/wave.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><H4>GREAT WAVE OFF KANGAWA</H4></h5>
+                          <p class="card-text">Hokusai <br>1831</p>
+                
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('THE ARNOLFINI PORTRAIT', 'Jan van Eyck 1434', 'One of the most significant works produced during the Northern Renaissance, this composition is believed to be one of the first paintings executed in oils. A full-length double portrait, it reputedly portrays an Italian merchant and a woman who may or may not be his bride. In 1934, the celebrated art historian Erwin Panofsky proposed that the painting is actually a wedding contract. What can be reliably said is that the piece is one of the first depictions of an interior using orthogonal perspective to create a sense of space that seems contiguous with the viewer’s own; it feels like a painting you could step into.<br><br>The convex mirror is highly detailed object. The outer part of the round frame holds total of 10 miniature paintings. Those miniatures represents the life events of Jesus Christ.Though, more interesting thing is the reflection in the mirror. After zooming in enough, you see four figures in the reflection against only two apparent to us in the whole painting.The reflection also reveals some more details of the room, unable to be perceived in the real room.','photos/arnol.webp')" >
+                        <img src="photos/arnol.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><H4>THE ARNOLFINI PORTRAIT</H4></h5>
+                          <p class="card-text">Jan van Eyck <br>1434</p>
+                
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;" onclick="openModal('THE STARRY NIGHT', 'Vincent Van Gogh, 1889','Vincent Van Gogh’s most popular painting, The Starry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d committed himself in 1889. Indeed, The Starry Night seems to reflect his turbulent state of mind at the time, as the night sky comes alive with swirls and orbs of frenetically applied brush marks springing from the yin and yang of his personal demons and awe of nature.', 'photos/starry.jpg')" >
+                        <img src="photos/starry.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>STARRY NIGHT</h4></h5>
+                          <p class="card-text">Vincent van Gogh<br>
+                            1889</p>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('THE KISS', 'LGustav Klimt,1907-1908','Opulently gilded and extravagantly patterned, The Kiss, Gustav Klimt’s fin-de-siècle portrayal of intimacy, is a mix of Symbolism and Vienna Jugendstil, the Austrian variant of Art Nouveau. Klimt depicts his subjects as mythical figures made modern by luxuriant surfaces of up-to-the moment graphic motifs. The work is a highpoint of the artist’s Golden Phase between 1899 and 1910 when he often used gold leaf—a technique inspired by a 1903 trip to the Basilica di San Vitale in Ravenna, Italy, where he saw the church’s famed Byzantine mosaics.','photos/kiss.webp')" >
+                        <img src="photos/kiss.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>THE KISS</h4></h5>
+                          <p class="card-text"> LGustav Klimt<BR>
+                            1907–1908</p>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('LIBERTY LEADING THE PEOPLE','Eugène Delacroix,1830', 'Liberty Leading the People is a painting by Eugène Delacroix commemorating the July Revolution of 1830, which toppled King Charles X. A woman of the people with a Phrygian cap personifying the concept of Liberty leads a varied group of people forward over a barricade and the bodies of the fallen, holding aloft the flag of the French Revolution – the tricolour, which again became Frances national flag after these events – in one hand and brandishing a bayonetted musket with the other. The figure of Liberty is also viewed as a symbol of France and the French Republic known as Marianne. The painting is sometimes wrongly thought to depict the French Revolution of 1789.', 'photos/liberty.jpg')" >
+                        <img src="photos/liberty.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>LIBERTY LEADING THE PEOPLE</h4></h5>
+                          <p class="card-text"> Eugène Delacroix<BR>1830</p>
+                          
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;" onclick="openModal('THE SCREAM', 'Edvard Munch, 1893','Munch defined how we see our own age - wracked with anxiety and uncertainty.The Scream is autobiographical, an expressionistic construction based on Munch’s actual experience of a scream piercing through nature while on a walk, after his two companions, seen in the background, had left him. Fitting the fact that the sound must have been heard at a time when his mind was in an abnormal state, Munch renders it in a style which if pushed to extremes can destroy human integrity.<br><br> The Scream may be the most iconic human figure in the history of Western art. Its androgynous, skull-shaped head, elongated hands, wide eyes, flaring nostrils and ovoid mouth have been engrained in our collective cultural consciousness; the swirling blue landscape and especially the fiery orange and yellow sky have engendered numerous theories regarding the scene that is depicted. ', 'photos/scream.jpg')" >
+                        <img src="photos/scream.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><H4>THE SCREAM</H4></h5>
+                          <p class="card-text">Edvard Munch<br> 1893</p>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('MONA LISA', 'Leonardo Da Vinci, 1503' ,'Painted between 1503 and 1517, Da Vinci’s alluring portrait has been dogged by two questions since the day it was made: Who’s the subject and why is she smiling? A number of theories for the former have been proffered over the years: That she’s the wife of the Florentine merchant Francesco di Bartolomeo del Giocondo (ergo, the work’s alternative title, La Gioconda); that she`s Leonardo’s mother, Caterina, conjured from Leonardo`s boyhood memories of her; and finally, that it`s a self-portrait in drag. As for that famous smile, its enigmatic quality has driven people crazy for centuries. Whatever the reason, Mona Lisa’s look of preternatural calm comports with the idealized landscape behind her, which dissolves into the distance through Leonardo’s use of atmospheric perspective' , 'photos/mona.webp')" >
+                        <img src="photos/mona.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">MONA LISA</h5>
+                          <p class="card-text">Leonardo Da Vinci<br> 1503</p>                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('NIGHTHAWKS','Edward Hopper,1942', 'Nighthawks, painting by Edward Hopper completed in 1942, and one of the most immediately recognizable works of all of American art.Hopper’s expressive use of artificial light playing upon the simplified shapes gives the painting its beauty. At greatest distance from the viewer, a couple sits with blank looks on their faces as a server busies himself behind the counter. The couple’s hands almost touch, but neither of them looks happy. That tableau makes the solitary diner across the counter (whom Hopper modeled after himself), with his back to the viewer, look even more conspicuous.<br><br> The entire composition stands against the darkened street outside—darkened because the city beyond the diner is under blackout for fear of attack at the very beginning of World War II, which may be a source of the angst apparent on the faces of the couple.Hopper claimed that the street itself wasn’t particularly lonely but that “unconsciously, probably, I was painting the loneliness of a large city.” Certainly the proximity of four figures who seem not to be engaging with one another suggests that alienation.', 'photos/night.jpg')" >
+                        <img src="photos/night.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">NIGHTHAWKS</h5>
+                          <p class="card-text">Edward Hopper<br> 1942</p>
+                          
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <center><a href="index.html"><button>BACK</button></a></center>
+
+    </section>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" alt="Modal Image">
+            <div class="modal-body">
+                <h3 id="modal-title"><b>Card Title</b></h3>
+                <h4 id="modal-info">Card Maker and Date</h4>
+                <p id="modal-text">Some quick example text to provide more details about the card.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" style=" text-align: center;">
+        <div class="left-section">
+            <h5 style="font-family: against; color: white;">CANVAS</h5>
+        </div>
+  
+    
+        <div class="right-section links">
+            <a href="https://github.com/Pankhuri0824" target="_blank"><img src="photos/github.png" alt="Link 1" style="max-width: 30px;"></a>
+            <a href="https://www.linkedin.com/in/pankhuri-singh-69a8a4258/" target="_blank"><img src="photos/linkedin.png" alt="Link 2" style="max-width: 30px;"></a>
+            <a href="https://www.behance.net/pankhurisinghh?log_shim_removal=1" target="_blank"><img src="photos/behance.png" alt="Link 3" style="max-width: 30px;"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pankhuri22348@iiitd.ac.in" target="_blank"><img src="photos/email.png" alt="Link 4" style="max-width: 30px;"></a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

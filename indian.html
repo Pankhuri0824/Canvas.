@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian paintings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light py-4" style="background-color: black; z-index: 1000;">
+        <div class="container-fluid">
+          <img src="photos/Logo-white.png">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-ddicon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link " style="color: white" href="index.html"><b>Home</b></a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white" href="#" onclick="scrollToSection('homedown')"><b>Region</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " style="color: white" href="#" onclick="scrollToSection('footer')"><b>Contact</b></a>
+              </li>
+              <li>
+                <i class="fa-solid fa-search" style="color: #ffffff;"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="inter" style="margin-top: 100px; padding-bottom: 50px;">
+        <div class="container text-center">
+            <div class="row">
+
+
+                <!-- FIRST COLOUMN -->
+                <div class="col">   
+
+                    <!-- <div class="card" style="width: 18rem;">
+                        <img src="photos/damyanti.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><h4>UNTITLED(DAMYANTI)</h4></h5>
+                            <p class="card-text">Raja Ravi Varma<br>
+                              Late 1890s</p>
+                        </div>
+                    </div> -->
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('RADHA IN MOONLIGHT', 'Raja Ravi Varma, 1890','This painting of Radha is conceivably one of the most beautiful of Raja Ravi Varma’s uttama nayikas, the high minded women of many virtues and qualities that are intrinsic to goddesses and women in classical Indian literature. Radha radiates the soft beauty, intelligence and sensitivity of the uttama nayika, and being Radha of unparalleled beauty, Raja Ravi Varma has painted her with extra care and refinement. Aware of Krishna’s godly qualities Radha has the pooja thali, the platter of flowers and sweetmeats near her, the ritual of worship and adulation to be completed before the love play starts. Human and godly loves are combined in this relationship. She sits at ease on the rocks near the glimmering water and perhaps she has just espied him emerging through the trees.', 'photos/radha.webp')">
+                        <img src="photos/radha.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>RADHA IN MOONLIGHT</h4></h5>
+                          <p class="card-text"> Raja Ravi Varma<BR>
+                            1890</p>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('KRISHNA AND RADHA LOOKING IN A MIRROR', 'Unknown,1800s','Here Krishna and Radha are shown seated on a beautifully decorated chauki on a terrace of a palace. Krishna is delightfully gazing the face of Radha in a mirror. The terrace overlooks an expanse of lovely landscape, foliage with flowering trees, hill tops bathed in sunrays, a lake with blooming lotuses and aquatic birds. The drawing is delicate and the figures are well modeled. The color scheme of the painting is brilliant and gold has been used on a lavish scale. The painting is a masterpiece of the Garhwal style.', 'photos/krishnamirror.jpg')">
+                        <img src="photos/krishnamirror.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>KRISHNA AND RADHA LOOKING IN A MIRROR</h4></h5>
+                          <p class="card-text">Unknown<br>1800s</p>
+                          
+                        </div>
+                    </div>
+
+                    
+                    <div class="card" style="width: 18rem;"onclick="openModal('BHARAT MATA', 'Abanindranath Tagore ,1905', 'Bharat Mata painting was created in 1905 or1906 as a part of the Swadeshi movement. During this period, the entire country was bursting with rage after the partition of the important cultural, political, and economic center- Bengal, in 1905. However, this painting that became a symbol of the nationalist movement and inspired more recreations to instill patriotism amongst the citizens was not meant to be called `Bharat Mata` initially. In fact, Tagore wanted it to be an ode to the Bengali women and hence, wanted to call it “Bongo Mata” as a symbol of women empowerment.<br><br> Bharat Mata, created by Abanindranath Tagore is unique in every aspect. Unlike popular Indian goddesses, Bharat Mata, represented by Tagore, is a simple yet godly young woman clad in a plain saffron saree draped in the Bengali style. Even though she is absolutely unembellished, she radiates immense beauty. Here, she does not look like a goddess, but a simple traditional Indian woman. It is her multiple hands and the halo around her head that gives her a divine appearance. In her four hands, she holds a Rudraksha mala, a white cloth, sheaves of paddy, and a palm leaf manuscript. .Tagore’s Bharat Mata is a personification of India’s rich economy and cultural heritage.','photos/bharat.jpg')">
+                    <img src="photos/bharat.jpg" class="card-img-top" alt="...">
+                    <div class="card-overlay">
+                        <h4 style="color: white;">READ</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><H4>BHARAT MATA</H4></h5>
+                        <p class="card-text">Abanindranath Tagore <br>1905</p>
+                
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- SECOND COLOUMN -->
+                <div class="col">
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('HORSES', 'Maqbook Fida Hussain,Unknown','Five Horses by M.F Husain is his very famous Painting. The image of the horse has always remained a powerful motif in M.F. Husain’s expansive oeuvre. In Indian mythology, the horse is revered as a symbol of the sun, of power, knowledge and fertility. Similarly, Husain’s horses are always depicted as strong and free-willed creatures, worthy of all their mythical and ritualistic symbolism.', 'photos/horses.webp')">
+                        <img src="photos/horses.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><H4>HORSES</H4></h5>
+                          <p class="card-text">M F Hussain <br> Unknown</p>
+                
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('THREE WOMEN', 'Jamini Roy,1942','The Three Pujarins i.e. Three priestesses is a tempera on paper with dimensions of 36.5 cm X 70.5 cm. Roy used gouache technique and sensually painted firm angular lines. The painting depicts three women in a very mature style as they worship, have been painted with thick, black contour lines with the application of the blue colour of the drape done flatly. All of the three women are dressed up in classical Bengali traditional way, veiling their heads with the Indigo coloured sarees which they are wearing in Bengali style. Indigo colour is an important historical reference to the uprising of Indigo peasants in Indigo movement against the British Government.', 'photos/threewomen.jpg')">
+                        <img src="photos/threewomen.jpg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>THREE WOMEN</h4></h5>
+                          <p class="card-text"> Jamini Roy<BR>1942</p>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('DAYS OF GLORY', 'Satish Gujal,1952','The subject of the present work is one that Gujral has revisited over time, relating to the struggle of displacement during the partition of India and Pakistan in 1947. Though India gained its independence from colonial Britain, millions along the new borders lost their homes and became refugees in the mass migration. Days of Glory depicts a state of helplessness but also quiet dignity--the figures are undifferentiated and restrained (without visual, auditory or tactile senses),but the compacted depth of space conveys a solidarity that speaks to the power of their collective experience.', 'photos/glory.webp')">
+                        <img src="photos/glory.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>DAYS OF GLORY</h4></h5>
+                          <p class="card-text"> Satish Gujral<BR>1952</p>
+                          
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;" onclick="openModal('SELF PORTRAIT','Amrita Shergill,1933', 'From 1930 onwards, Amrita Sher-Gil painted a series of self- portraits representing her many moods.Sher-Gil, the early modernist artist, painted the self-portrait in 1933, when she was a 19-year-old in Paris.<br><br>Amrita Sher-Gil is often compared to the popular Mexican painter Frida Kahlo. Both women artists made a dent in their respective country’s art dominated by men. Through their art, they became the voice of women, of their generation. This comparison is apparent in this Self-Portrait. The portrait features the artist’s very Indian features, blended with modern techniques brought about her European upbringing. It’s a portrait that blends European and Indian styles, as well as the traditional and the new face of Indian art.', 'photos/amrita.jpeg')">
+                        <img src="photos/amrita.jpeg" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>SELF PORTRAIT</h4></h5>
+                          <p class="card-text">Amrita Shergil<br>
+                            1933</p>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('WOMAN HOLDING A FRUIT', 'Raja Ravi Varma, Late 1900s','Ravi Varma was born into an aristocratic family of Kerala. He taught himself the intricacies of oil painting and the practices of European naturalism. ‘Woman Holding a Fruit’ shows Ravi Varma’s mastery over the idioms of a new visual language in India. In the naturalistic depiction of the young woman, Ravi Varma lyrically combines eroticism with innocence. His handling of colours – mostly soft pinks and browns – heightens the tenderness evoked in this painting.', 'photos/fruitwoman.webp')">
+                        <img src="photos/fruitwoman.webp" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>WOMAN HOLDING A FRUIT</h4></h5>
+                          <p class="card-text">Raja Ravi Varma<br> Late 1900s</p>                          
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;" onclick="openModal('MAHISHASURA', 'Tyeb Mehta<br> 1995','The reclusive artist was commissioned by a family of great provenance in 1993 while he was in Santiniketan, a small town north of Kolkata. Disturbed by the riots of 1992, Mehta saw this as an opportunity to create a topical artwork and, thus, Durga Mahisasura Mardini was born. The iconic visual of the goddess Durga killing a demon was harnessed by Mehta to give shape to a powerful idea—that anything anti-secular or anti-democratic will eventually be overcome by the spirit of India. On closer inspection, the colours of the Indian flag reveal themselves; Mehta was making a deliberate, political comment.', 'photos/mahisha.png')">
+                        <img src="photos/mahisha.png" class="card-img-top" alt="...">
+                        <div class="card-overlay">
+                            <h4 style="color: white;">READ</h4>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"><h4>MAHISHASURA</h4></h5>
+                          <p class="card-text">Tyeb Mehta<br> 1995</p>
+                          
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <center><a href="index.html"><button>BACK</button></a></center>
+
+    </section>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" alt="Modal Image">
+            <div class="modal-body">
+                <h3 id="modal-title"><b>Card Title</b></h3>
+                <h4 id="modal-info">Card Maker and Date</h4>
+                <p id="modal-text">Some quick example text to provide more details about the card.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer" style=" text-align: center;">
+        <div class="left-section">
+            <h5 style="font-family: against; color: white;">CANVAS</h5>
+        </div>
+  
+    
+        <div class="right-section links">
+            <a href="https://github.com/Pankhuri0824" target="_blank"><img src="photos/github.png" alt="Link 1" style="max-width: 30px;"></a>
+            <a href="https://www.linkedin.com/in/pankhuri-singh-69a8a4258/" target="_blank"><img src="photos/linkedin.png" alt="Link 2" style="max-width: 30px;"></a>
+            <a href="https://www.behance.net/pankhurisinghh?log_shim_removal=1" target="_blank"><img src="photos/behance.png" alt="Link 3" style="max-width: 30px;"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=pankhuri22348@iiitd.ac.in" target="_blank"><img src="photos/email.png" alt="pankhuri22348@iiitd.ac.in" style="max-width: 30px;"></a>
+        </div>
+    </footer>
+    
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+</body>
+</html>
